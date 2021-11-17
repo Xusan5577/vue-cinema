@@ -1,0 +1,237 @@
+@media(max-width:1180px) {
+    .film_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .col {
+        flex-shrink: 0;
+    }
+
+    .row::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .row::-webkit-scrollbar-thumb {
+        background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+        border-radius: 30px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        max-width: 560px;
+        width: 100%;
+        margin: 30px auto 0;
+    }
+}
+
+@media(max-width:800px) {
+    .widow {
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+}
+
+@media(max-width:684px) {
+    .menu {
+        width: 40px;
+        height: 1px;
+        background-color: white;
+        position: relative;
+    }
+
+    .menu::after,
+    .menu::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        background-color: white;
+    }
+
+    .menu::before {
+        top: 10px;
+    }
+
+    .list {
+        position: absolute;
+        flex-direction: column;
+        z-index: 999;
+        background-color: rgba(4, 13, 31, 0.8);
+        padding: 50px;
+        top: -80px;
+        right: -100%;
+        height: 100vh;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+    .nav {
+        padding: 30px 0;
+    }
+
+    #menu:checked+.list {
+        right: 0;
+
+    }
+
+    .list_icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 35px;
+    }
+}
+
+@media(max-width:650px) {
+    .intro_title {
+        font-size: 50px;
+        line-height: 150%;
+    }
+
+    .intro {
+        height: 500px;
+    }
+
+    .intro_text {
+        max-width: 570px;
+        width: 100%;
+    }
+}
+
+@media(max-width:600px) {
+    .title {
+        margin: 30px 0;
+    }
+
+    .film_info {
+        flex-direction: column;
+    }
+
+    .widow_text {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .widow_title {
+        width: 380px;
+        margin-top: 30px;
+    }
+
+    .widow {
+        height: 450px;
+        text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .box_1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .intro_title {
+        font-size: 35px;
+    }
+
+    .intro_text {
+        margin: 20px 0;
+    }
+
+    .link {
+        width: 140px;
+        height: 40px;
+    }
+
+    .intro {
+        height: 450px;
+    }
+
+    .header_top {
+        height: 60px;
+    }
+
+    .nav {
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .menu {
+        width: 30px;
+    }
+}
+
+@media(max-width:450px) {
+    .game_title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .game {
+        gap: 15px;
+        height: 400px;
+    }
+
+    .game_text {
+        line-height: 20px;
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media(max-width:400px) {
+    .widow_title {
+        max-width: 300px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .widow_text {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 15px 0;
+    }
+
+    .widow {
+        height: 350px;
+    }
+
+    .col {
+        max-width: 362px;
+        width: 100%;
+    }
+}
+
+@media(max-width:330px) {
+    .game_title {
+        font-size: 24px;
+    }
+
+    .game_text {
+        line-height: 18px;
+        font-size: 13px;
+    }
+}
